@@ -1,0 +1,3 @@
+console.log("I'm editing this comment")
+
+$("#<%= dom_id(@comment)%>").replaceWith("<%= j(render "comments/form", comment: @comment) %>");
